@@ -87,11 +87,11 @@ const HomePage = () => {
           </nav>
         </header>
         <section className=' relative max-w-7xl mx-auto text-white'>
-          <div className=' md:py-56 pt-56 pb-5  uppercase md:ml-20 md:pt-56 '>
+          <div className=' md:py-56 pt-56 pb-5 mx-3  uppercase md:ml-20 md:pt-56 '>
             <p className=' text-lg font-semibold tracking-[3.5px] mb-3'>
               Dental Care For
             </p>
-            <h2 className=' text-[5rem] max-w-xl leading-none font-normal'>
+            <h2 className=' md:text-[5rem] text-5xl max-w-xl leading-none font-normal'>
               Your
               <span className=' font-extrabold ml-5 bg-clip-text text-white'>
                 New Smile
@@ -99,7 +99,7 @@ const HomePage = () => {
             </h2>
             <a
               href='#WorkingHour-Section'
-              className='mt-3 py-2 pr-12 w-fit hover:bg-[#17a8d8] hover:text-white text-[#17a8d8]  duration-300  pl-6 text-3xl flex rounded-full    items-center border-2 border-[#17a8d8]'
+              className='mt-3 py-2 pr-12 w-fit hover:bg-[#17a8d8] hover:text-white text-[#17a8d8]  duration-300  pl-6 md:text-3xl text-xl  flex rounded-full    items-center border-2 border-[#17a8d8]'
             >
               <span className='  mr-5'>Working Hours</span>{' '}
               <svg
@@ -122,7 +122,7 @@ const HomePage = () => {
       </div>
       <div
         id='WorkingHour-Section'
-        className=' mt-32 mb-20 max-w-7xl mx-auto text-center'
+        className=' mt-32 mb-20 max-w-7xl mx-auto text-center '
       >
         <h3 className=' text-5xl text-[#121f38] font-medium'>Working Hours</h3>
         <p className=' my-4 text-[#717171] text-lg font-normal  max-w-2xl md:text-start  mx-auto'>
