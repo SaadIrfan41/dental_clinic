@@ -64,7 +64,7 @@ const HomePage = () => {
         />
         <header className='max-w-7xl border-b mx-auto relative text-white'>
           <nav className='flex justify-between '>
-            <div className='max-h-[120px]  max-w-[227px]'>
+            <div className='max-h-[120px]  md:max-w-[227px] max-w-[150px]'>
               <Image
                 priority
                 // placeholder='blur'
