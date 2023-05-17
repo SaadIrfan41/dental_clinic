@@ -52,7 +52,15 @@ const skills = [
 const HomePage = () => {
   return (
     <div>
-      <div className='relative  md:h-screen z-20  overflow-hidden'>
+      <div
+        // style={{
+        //   backgroundImage: 'url(./heroImage.jpg)',
+        //   backgroundPosition: 'center center',
+        //   backgroundRepeat: 'no-repeat',
+        //   backgroundSize: 'cover',
+        // }}
+        className='relative  md:h-screen z-20  overflow-hidden'
+      >
         <div className='absolute bg-gradient-to-l from-black/5 to-black inset-0 opacity-[.9] ' />
 
         <Image
@@ -87,7 +95,7 @@ const HomePage = () => {
           </nav>
         </header>
         <section className=' relative max-w-7xl mx-auto text-white'>
-          <div className=' md:py-56 pt-56 pb-5 mx-3  uppercase md:ml-20 md:pt-56 '>
+          <div className=' md:py-56 pt-40 pb-16 mx-3  uppercase md:ml-20 md:pt-56 '>
             <p className=' text-lg font-semibold tracking-[3.5px] mb-3'>
               Dental Care For
             </p>
@@ -99,7 +107,7 @@ const HomePage = () => {
             </h2>
             <a
               href='#WorkingHour-Section'
-              className='mt-3 py-2 pr-12 w-fit hover:bg-[#17a8d8] hover:text-white text-[#17a8d8]  duration-300  pl-6 md:text-3xl text-xl  flex rounded-full    items-center border-2 border-[#17a8d8]'
+              className='mt-3 py-2 pr-12 w-fit hover:bg-[#17a8d8] hover:text-white text-[#17a8d8]  duration-300  pl-6 md:text-3xl text-base flex rounded-full    items-center border-2 border-[#17a8d8]'
             >
               <span className='  mr-5'>Working Hours</span>{' '}
               <svg
@@ -258,7 +266,7 @@ const HomePage = () => {
       </div>
       <div
         id='Location-Section'
-        className=' relative mt-20 mb-20 text-center md:text-start '
+        className=' relative mt-20 mb-20 mx-5 text-center md:text-start '
       >
         <div className=' grid grid-cols-1 md:grid-cols-2  md:gap-x-10 gap-y-10 max-w-7xl mx-auto mt-36 '>
           <div className=' pb-12 col-span-1 '>
