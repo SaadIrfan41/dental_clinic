@@ -114,12 +114,12 @@ const page = () => {
           </div>
         </div>
       </section>
-      <section className=' overflow-hidden rounded-tr-[11rem] relative'>
+      <section className=' overflow-hidden xl:rounded-tr-[11rem] relative'>
         <div
           id='Location-Section'
           className=' relative pt-20 mb-20 mx-5 text-center md:text-start location'
         >
-          <div className=' grid grid-cols-1 md:grid-cols-2  md:gap-x-10 gap-y-10 max-w-[90rem] lg:max-w-[60rem] xl:max-w-6xl 2xl:max-w-7xl mx-auto mt-36  '>
+          <div className=' grid grid-cols-1 md:grid-cols-2  md:gap-x-10 gap-y-10 max-w-[90rem] lg:max-w-[60rem] xl:max-w-6xl 2xl:max-w-7xl mx-auto xl:mt-36  xl:pb-32 '>
             <div className=' pb-12 col-span-1  '>
               <h5 className=' font-normal mb-5  text-3xl  xl:text-5xl whitespace-break-spaces'>
                 Providing the <span className=' font-extrabold '>best</span>{' '}

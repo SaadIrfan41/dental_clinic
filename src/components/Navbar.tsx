@@ -54,9 +54,12 @@ const Navbar = () => {
           >
             Services
           </a>
-          <a className=' py-2  text-[22px] px-2  font-normal' href='#'>
+          <Link
+            className=' py-2  text-[22px] px-2  font-normal'
+            href='/doctors'
+          >
             Meet Your Doctors
-          </a>
+          </Link>
           <a
             className=' py-2  text-[22px] px-2  font-normal'
             href='/#Location-Section'
@@ -75,7 +78,7 @@ const Navbar = () => {
           </a>
         </div>
         <div
-          className='bg-[#2b3340] 2xl:hidden ml-auto  text-white rounded-xl pt-[6px] px-[10px] '
+          className='bg-[#2b3340] 2xl:hidden ml-auto   text-white rounded-xl py-[4px] px-[10px] '
           onClick={() => dialogRef.current?.showModal()}
         >
           <Hamburger toggled={isOpen} toggle={setIsOpen} />
@@ -91,7 +94,7 @@ const Navbar = () => {
             }
           }}
           className=' right-auto min-h-screen w-0 transition-[width]
-             duration-500 [&[open]]:opacity-100 lg:[&[open]]:w-[20vw] [&[open]]:w-[50vw] backdrop:backdrop-blur p-0   bg-white h-full bottom-0 block opacity-0 '
+             duration-500 [&[open]]:opacity-100 lg:[&[open]]:w-[20vw] [&[open]]:w-[70vw] backdrop:backdrop-blur p-0   bg-white h-full bottom-0 block opacity-0 '
         >
           <nav className=' h-full w-full  px-[1vw] pt-10 flex flex-col'>
             <Link
@@ -115,7 +118,7 @@ const Navbar = () => {
                   dialogRef.current?.close(), setIsOpen(false)
                 }}
                 className=' py-2  text-[24px] px-2 '
-                href='/'
+                href='/doctors'
               >
                 Meet Your Doctors
               </Link>
