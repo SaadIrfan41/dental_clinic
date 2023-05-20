@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import React from 'react'
-import heroImage from '../../public/heroImage.jpg'
-import LogoImage from '../../public/logo.png'
-import ServiesBGImage from '../../public/servicesBG.jpg'
-import DoctorImage from '../../public/doctorImage.jpg'
+import heroImage from '../../../public/heroImage2.jpg'
+import LogoImage from '../../../public/logo.png'
+import ServiesBGImage from '../../../public/servicesBG.jpg'
+import DoctorImage from '../../../public/doctorImage.jpg'
 import {
   BracesIcon,
   Check_Icon,
