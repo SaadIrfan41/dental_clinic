@@ -62,11 +62,13 @@ const OurDoctors = () => {
           />
           <div className=' grid md:grid-cols-2  grid-cols-1  '>
             <div className=' 2xl:text-[50px] lg:text-[36px] text-[25px] text-[#2B3340]   '>
-              <div className='flex whitespace-break-spaces md:block'>
-                Meet the <span className='font-extrabold'>Embassy</span>
-                <h3 className=' font-extrabold 2xl:text-[50px] lg:text-[36px] text-[25px] text-[#2B3340] xl:mb-10 mb-5'>
-                  Dental Team
-                </h3>
+              <div className='flex whitespace-break-spaces md:block mb-5'>
+                <h1 className=' '>
+                  Meet the{' '}
+                  <span className='font-extrabold'>Embassy Dental Team</span>
+                </h1>
+
+                {/* <h3 className=' font-extrabold 2xl:text-[50px] lg:text-[36px] text-[25px] text-[#2B3340] xl:mb-10 mb-5'></h3> */}
               </div>
               <p className=' font-normal text-[16px] xl:text-[22px] text-[#2B3340]'>
                 Embassy Dental is Nashville’s dentist. With 7 convenient
@@ -82,13 +84,13 @@ const OurDoctors = () => {
                 href='/#Location-Section'
                 className=' xl:py-[12px] xl:px-[24px] py-[9px] px-[18px] w-fit bg-[#fbaf43] lg:text-xl hover:text-white text-[#2b3340] text-center  duration-300 md:text-xl text-base flex rounded-full    items-center border-2 border-[#fbaf43] '
               >
-                <span className=''>Find Our Location</span>{' '}
+                <span className=''>Find Our Location</span>
               </Link>
               <Link
                 href='/services'
                 className=' xl:py-[12px] xl:px-[24px] py-[9px] px-[18px] w-fit bg-[#fbaf43] lg:text-xl hover:text-white text-[#2b3340] text-center  duration-300   md:text-xl text-base flex rounded-full    items-center border-2 border-[#fbaf43] '
               >
-                <span className=''>View All Service Offerings</span>{' '}
+                <span className=''>View All Service Offerings</span>
               </Link>
             </div>
           </div>

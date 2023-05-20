@@ -94,9 +94,9 @@ const page = () => {
           <div className=' col-span-1 xl:ml-[-25%] text-center 2xl:text-start 2xl:ml-[-15%] mx-5 sm:mx-0 mb-20  xl:order-2  my-auto 2xl:my-20'>
             <h2 className=' lg:text-[50px]  2xl:text-[50px]  text-[25px] sm:text-3xl xl:text-4xl md:text-5xl flex justify-center 2xl:justify-start font-normal mb-7 whitespace-break-spaces'>
               How can
-              <span className=' font-extrabold '> Embassy </span>
-              Help?
+              <span className=' font-extrabold '> Embassy Help? </span>
             </h2>
+
             <p className='lg:text-[22px] xl:text-[22px] xl:text-base text-base font-normal mb-7'>
               From general dentistry and emergency dental care up to braces and
               other cosmetic offerings, we are Nashville’s comprehensive dental
