@@ -52,6 +52,41 @@ export const LogoSVG = () => {
     </svg>
   )
 }
+export const LogoImage = () => {
+  return (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      x='0'
+      y='0'
+      enableBackground='new 0 0 87.5 65.5'
+      version='1.1'
+      viewBox='0 0 87.5 65.5'
+      fill='currentColor'
+      className='w-full'
+    >
+      <path
+        fill='#2B3240'
+        d='M0 29.3L0 65.4 43.8 65.5 43.8 65.5z'
+        className='st0'
+      ></path>
+      <path
+        fill='#0AABA3'
+        d='M43.7 65.5L87.5 29.3 87.5 0 43.8 36.1z'
+        className='st1'
+      ></path>
+      <path
+        fill='#1F91B6'
+        d='M61.4 50.8L43.7 36.2 43.7 36.1 0 0 0 29.3 43.7 65.5 43.7 65.5z'
+        className='st2'
+      ></path>
+      <path
+        fill='#F9AE42'
+        d='M87.5 29.3L87.5 65.4 43.7 65.5 43.7 65.5z'
+        className='st3'
+      ></path>
+    </svg>
+  )
+}
 export const ChevronRight = () => {
   return (
     <svg

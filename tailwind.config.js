@@ -5,6 +5,20 @@ module.exports = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  theme: {
+    extend: {
+      keyframes: {
+        wiggle: {
+          '0%': { display: 'none', opacity: '0' },
+          '1%': { display: 'block', opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+      },
+      animation: {
+        wiggle: 'wiggle 0.5s ease-in-out ',
+      },
+    },
+  },
   // theme: {
   //   extend: {
   //     backgroundImage: {

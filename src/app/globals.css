@@ -5,9 +5,9 @@
 html{
     scroll-behavior: smooth;
 }
-.BGIMAGE{
-    background-image: url('https: //embassydental.com/wp-content/uploads/2022/02/marquee-hero-bg-fullwidth.jpg');
-}
+
+
+
 .location:before {
     content: "";
     box-shadow: inset 0px 12px 300px 60px #c6cfdc;
@@ -16,6 +16,20 @@ html{
     left: 50%;
     width: 100vw;
     height: 100%;
+    transform: translate(-50%, 0%);
+    z-index: -1;
+    pointer-events: none;
+}
+
+.footer:before {
+    content: "";
+    box-shadow: inset 0px 12px 300px 60px #c6cfdc;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100vw;
+        height: 100%;
+        overflow: hidden;
     transform: translate(-50%, 0%);
     z-index: -1;
     pointer-events: none;

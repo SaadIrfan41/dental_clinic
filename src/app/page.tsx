@@ -35,7 +35,7 @@ const page = () => {
         <div className='heroImageSide '>
           <Image
             priority
-            placeholder='blur'
+            // placeholder='blur'
             src={heroSideImage}
             className='  h-full pointer-events-none w-fit z-10 xl:block  hidden '
             alt='SideImage'
@@ -68,7 +68,7 @@ const page = () => {
           className=' hidden lg:block bg-[#2b3340] absolute inset-0 z-0'
         />
         <div className=' grid xl:grid-cols-3 grid-col-1 py-32 xl:max-w-[104rem] max-w-[483px] sm:max-w-[650px] md:max-w-4xl lg:max-w-5xl  mx-auto  z-30 '>
-          <div className='grid xl:grid-cols-3 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mt-20 xl:mt-0   col-span-2  order-2 xl:order-1  max-w-7xl mx-auto  gap-5   lg:gap-12   '>
+          <div className='grid xl:grid-cols-3 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mt-20 xl:mt-0   col-span-2  order-2 xl:order-1  max-w-7xl mx-auto  gap-5   lg:gap-12'>
             {services.map(({ name, icon }, index) => (
               <div
                 style={{
@@ -117,7 +117,7 @@ const page = () => {
       <section className=' overflow-hidden xl:rounded-tr-[11rem] relative'>
         <div
           id='Location-Section'
-          className=' relative pt-20 mb-20 mx-5 text-center md:text-start location'
+          className=' relative pt-20  mx-5 text-center md:text-start location'
         >
           <div className=' grid grid-cols-1 md:grid-cols-2  md:gap-x-10 gap-y-10 max-w-[90rem] lg:max-w-[60rem] xl:max-w-6xl 2xl:max-w-7xl mx-auto xl:mt-36  xl:pb-32 '>
             <div className=' pb-12 col-span-1  '>

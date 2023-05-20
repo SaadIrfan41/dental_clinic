@@ -1,6 +1,7 @@
 import Navbar from '@/components/Navbar'
 import './globals.css'
 import { Open_Sans } from 'next/font/google'
+import Footer from '@/components/Footer'
 
 // const inter = Inter({ subsets: ['latin'] })
 const openSans = Open_Sans({
@@ -22,6 +23,7 @@ export default function RootLayout({
       <body className={`${openSans.className} scroll-smooth`}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   )
