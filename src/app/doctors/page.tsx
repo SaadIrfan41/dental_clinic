@@ -79,7 +79,7 @@ const OurDoctors = () => {
                 exceed your expectations.
               </p>
             </div>
-            <div className=' md:mt-auto flex md:flex-col  md:items-end gap-5 mt-10 mx-auto'>
+            <div className=' md:mt-auto flex flex-col sm:flex-row md:flex-col  md:items-end gap-5 mt-10 md:mx-auto '>
               <Link
                 href='/#Location-Section'
                 className=' xl:py-[12px] xl:px-[24px] py-[9px] px-[18px] w-fit bg-[#fbaf43] lg:text-xl hover:text-white text-[#2b3340] text-center  duration-300 md:text-xl text-base flex rounded-full    items-center border-2 border-[#fbaf43] '

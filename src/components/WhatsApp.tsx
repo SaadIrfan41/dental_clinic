@@ -9,7 +9,7 @@ const WhatsAppButton = () => {
     <Link
       href={'https://wa.me/+923189737788?text=Hello...'}
       target='_blank'
-      className='  fixed w-20 h-20 z-50 bottom-5 right-5'
+      className='  fixed md:w-20 md:h-20 w-16 h-16 z-50 bottom-3 right-3 md:bottom-5 md:right-5'
     >
       {/* <span className='animate-ping absolute inline-flex w-12 h-12 bottom-4 right-4 rounded-full bg-green-400 opacity-75' /> */}
       <Image
