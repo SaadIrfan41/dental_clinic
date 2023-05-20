@@ -12,10 +12,9 @@ import {
   TeethCleaningIcon,
 } from '@/components/Icons/icon'
 import React from 'react'
-import heroSideImage from '../../public/heroSideImage.png'
-// import heroImage2 from '../../public/heroImage2.jpg'
+import heroSideImage from '../../../public/heroSideImage.png'
+import heroImage2 from '../../../public/heroImage2.jpg'
 import Image from 'next/image'
-import Link from 'next/link'
 const services = [
   { name: 'Emergency Dentist', icon: <EmergencyDentistIcon /> },
   { name: 'Braces', icon: <BracesIcon /> },
@@ -31,16 +30,31 @@ const page = () => {
   return (
     <div>
       <section className=' relative bg-[#2b3340] overflow-hidden   '>
+        {/* <Image
+          priority
+          // placeholder='blur'
+          src={heroSideImage}
+          className=' absolute xl:block  hidden top-0 right-[-3%] h-full max-w-fit pointer-events-none z-10  '
+          alt='SideImage'
+        /> */}
+        {/* <div className='BGIMAGE absolute top-0 right-0 bg-cover' /> */}
         <div className='heroBG' />
         <div className='heroImageSide '>
           <Image
             priority
-            placeholder='blur'
+            // placeholder='blur'
             src={heroSideImage}
             className='  h-full pointer-events-none w-fit z-10 xl:block  hidden '
             alt='SideImage'
           />
         </div>
+        {/* <Image
+          priority
+          // placeholder='blur'
+          src={heroImage2}
+          className=' absolute z-[0] duration-500 transition-[right]   top-0 object-cover lg:right-[-38%] xl:right-[-18%] 2xl:right-[-8%]  right-[-90vw] sm:right-[-40vw] md:right-[-40%]  h-full max-w-fit mix-blend-multiply pointer-events-none'
+          alt='SideImage'
+        /> */}
         <div className=' lg:max-w-[100rem] xl:max-w-[80rem] max-w-[608px] md:max-w-[608px] flex flex-col    lg:mx-auto      '>
           <div className='  pb-[12.5rem]  pl-[5vw] lg:pt-80 2xl:pt-[330px]  pt-[290px] duration-500 transition-[padding]    z-20  '>
             <h1 className='text-[#c6cfdc]  font-normal lg:text-5xl xl:text-6xl text-4xl  mix-blend-normal '>
@@ -51,7 +65,7 @@ const page = () => {
               </span>
             </h1>
             <a
-              href='#Location-Section'
+              href='#WorkingHour-Section'
               className='mt-3 py-2 pr-12 w-fit hover:bg-[#fbaf43] lg:text-2xl hover:text-white text-[#fbaf43]  duration-300  pl-6 md:text-xl text-base flex rounded-full    items-center border-2 border-[#fbaf43]'
             >
               <span className='  mr-5'>Find Our Location</span>{' '}
@@ -104,13 +118,6 @@ const page = () => {
             <strong className=' font-semibold mb-7 xl:text-[22px] lg:text-[22px] text-base'>
               Call today to take advantage of our new patient specials.
             </strong>
-
-            <Link
-              href='/services'
-              className='mt-10 py-2 pr-12 w-fit bg-[#fbaf43] lg:text-xl hover:text-white text-[#2b3340] text-center  duration-300  pl-6 md:text-xl text-base flex rounded-full    items-center border-2 border-[#fbaf43] mx-auto 2xl:ml-0'
-            >
-              <span className=''>View All Service Offerings</span>{' '}
-            </Link>
           </div>
         </div>
       </section>
