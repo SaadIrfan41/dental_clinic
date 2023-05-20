@@ -66,16 +66,13 @@ const Navbar = () => {
           >
             Our Locations
           </a>
-          <a
-            className=' text-[#fbaf43] py-2 flex items-center jus text-[22px] px-2  font-normal'
-            href='#'
-          >
+          <span className=' text-[#fbaf43] py-2 flex items-center jus text-[22px] px-2  font-normal'>
             <span className=' flex items-center justify-center mr-1 rounded-full w-6 h-6 bg-[#fbaf43]'>
               {' '}
               <PhoneSVG />
             </span>
             Hotline(+92) 318-9737788
-          </a>
+          </span>
         </div>
         <div
           className='bg-[#2b3340] 2xl:hidden ml-auto   text-white rounded-xl py-[4px] px-[10px] '
@@ -131,10 +128,7 @@ const Navbar = () => {
               >
                 Our Locations
               </a>
-              <a
-                className=' text-[#fbaf43] py-2 flex items-center text-[24px] '
-                href='#'
-              >
+              <span className=' text-[#fbaf43] py-2 flex items-center text-[24px] '>
                 <span className=' flex items-center justify-center mr-1 rounded-full w-7 h-7 bg-[#fbaf43]'>
                   {' '}
                   <PhoneSVG />
@@ -142,7 +136,7 @@ const Navbar = () => {
                 Hotline
                 <br />
                 (+92) 318-9737788
-              </a>
+              </span>
             </div>
           </nav>
         </dialog>

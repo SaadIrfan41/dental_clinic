@@ -11,11 +11,13 @@ import {
   Phone_Icon,
   TeethCleaningIcon,
 } from '@/components/Icons/icon'
+
 import React from 'react'
 import heroSideImage from '../../public/heroSideImage.png'
 // import heroImage2 from '../../public/heroImage2.jpg'
 import Image from 'next/image'
 import Link from 'next/link'
+import WhatsAppButton from '@/components/WhatsApp'
 const services = [
   { name: 'Emergency Dentist', icon: <EmergencyDentistIcon /> },
   { name: 'Braces', icon: <BracesIcon /> },
@@ -114,6 +116,7 @@ const page = () => {
           </div>
         </div>
       </section>
+
       <section className=' overflow-hidden xl:rounded-tr-[11rem] relative'>
         <div
           id='Location-Section'

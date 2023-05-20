@@ -2,6 +2,7 @@ import Navbar from '@/components/Navbar'
 import './globals.css'
 import { Open_Sans } from 'next/font/google'
 import Footer from '@/components/Footer'
+import WhatsAppButton from '@/components/WhatsApp'
 
 // const inter = Inter({ subsets: ['latin'] })
 const openSans = Open_Sans({
@@ -20,7 +21,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en' className='scroll-smooth'>
-      <body className={`${openSans.className} scroll-smooth`}>
+      <body className={`${openSans.className} scroll-smooth relative`}>
+        <WhatsAppButton />
         <Navbar />
         {children}
         <Footer />

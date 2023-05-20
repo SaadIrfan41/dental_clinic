@@ -37,6 +37,9 @@ dependencies:
   react-dom:
     specifier: 18.2.0
     version: 18.2.0(react@18.2.0)
+  react-whatsapp:
+    specifier: ^0.3.0
+    version: 0.3.0
   tailwindcss:
     specifier: 3.3.2
     version: 3.3.2
@@ -2245,6 +2248,10 @@ packages:
 
   /react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
+    dev: false
+
+  /react-whatsapp@0.3.0:
+    resolution: {integrity: sha512-ZuCKhd30crVVNdLf/3BfDffqEOZLFW6mYRITA4fB6Vk5p3TU1Gl3YfTEfLE/7W+kTuwYPzF6aDnzbNt6GcatiQ==}
     dev: false
 
   /react@18.2.0:
