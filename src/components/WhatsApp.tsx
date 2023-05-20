@@ -1,15 +1,15 @@
-'use client'
 import React from 'react'
-import ReactWhatsapp from 'react-whatsapp'
+
 import WhatsAppImage from '../../public/whatsApp.svg'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const WhatsAppButton = () => {
   return (
-    <ReactWhatsapp
+    <Link
+      href={'https://wa.me/+923189737788?text=Hello...'}
+      target='_blank'
       className='  fixed w-20 h-20 z-50 bottom-5 right-5'
-      number='+923189737788'
-      message='Hello !!!'
     >
       {/* <span className='animate-ping absolute inline-flex w-12 h-12 bottom-4 right-4 rounded-full bg-green-400 opacity-75' /> */}
       <Image
@@ -19,7 +19,7 @@ const WhatsAppButton = () => {
         className='  '
         alt='WhatsApp Buttom'
       />
-    </ReactWhatsapp>
+    </Link>
   )
 }
 
