@@ -7,7 +7,7 @@ import Link from 'next/link'
 const WhatsAppButton = () => {
   return (
     <Link
-      href={'https://wa.me/+923189737788?text=Hello...'}
+      href={'https://wa.me/+923272214444?text=Hello...'}
       target='_blank'
       className='  fixed md:w-20 md:h-20 w-16 h-16 z-50 bottom-3 right-3 md:bottom-5 md:right-5'
     >

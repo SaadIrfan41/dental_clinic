@@ -65,7 +65,7 @@ const OurDoctors = () => {
               <div className='flex whitespace-break-spaces md:block mb-5'>
                 <h1 className=' '>
                   Meet the{' '}
-                  <span className='font-extrabold'>Embassy Dental Team</span>
+                  <span className='font-extrabold'>Aesthetic Dental Team</span>
                 </h1>
 
                 {/* <h3 className=' font-extrabold 2xl:text-[50px] lg:text-[36px] text-[25px] text-[#2B3340] xl:mb-10 mb-5'></h3> */}

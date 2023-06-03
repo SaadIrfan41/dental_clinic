@@ -4,9 +4,12 @@ import {
   Location_Icon,
   LogoImage,
   LogoSVG,
+  Mobile_Icon,
   Phone_Icon,
 } from './Icons/icon'
 import Link from 'next/link'
+import Image from 'next/image'
+import Logo2 from '../../public/logo.png'
 
 const Footer = () => {
   return (
@@ -14,34 +17,37 @@ const Footer = () => {
       style={{ boxShadow: 'inset 0px 12px 300px 60px #c6cfdc' }}
       className=' '
     >
-      <div className='  grid md:grid-cols-3 text-[#2b3340] grid-cols-1 max-w-7xl mx-auto items-center py-24 '>
-        <div className=' '>
+      <div className='  grid md:grid-cols-3 text-[#2b3340] grid-cols-1 max-w-7xl mx-auto items-center py-24 px-20 '>
+        <div className='  '>
           {' '}
-          <h3 className=' font-extrabold text-2xl mt-5 text-center'>
-            Our Location
-          </h3>
-          <div className='text-[#17ada4]  mt-5'>
-            <div className='flex pb-[calc(20px/2)] justify-center '>
+          <h3 className=' font-extrabold text-2xl mt-5 '>Our Location</h3>
+          <div className='text-[#17ada4]  mt-5 flex flex-col  items-start'>
+            <div className='flex pb-[calc(20px/2)] justify-center flex-shrink-0 '>
               <Location_Icon />
               <span className=' text-[#2b3340] pl-[5px]'>
-                90 St Johns Brooklyn, NY
+                Shop No 3, Ground Floor, Times Square Building, G-8
+                Markaz Islamabad
               </span>
             </div>
             <div className='flex pb-[calc(20px/2)] justify-center '>
               <Phone_Icon />
               <span className=' text-[#2b3340] pl-[5px] '>
-                Phone: +012 (999) 8777
+                Landline: 051-8482888
               </span>
+            </div>
+            <div className='flex pb-[calc(20px/2)] justify-center md:justify-start'>
+              <Mobile_Icon />
+              <span className=' text-black pl-[5px] '>Phone: 0327-2214444</span>
             </div>
             <div className='flex pb-[calc(20px/2)] justify-center'>
               <Email_Icon />{' '}
               <span className=' text-[#2b3340] pl-[5px] mb-10'>
-                support.trusmile@gmail.com
+                aestheticdentalco@gmail.com
               </span>
             </div>
           </div>
         </div>
-        <div className=''>
+        <div className=' mb-auto'>
           <h3 className=' font-extrabold text-2xl mt-5 text-center'>
             Quick Links
           </h3>
@@ -70,8 +76,8 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className=' text-[#2b3340] w-20 h-20 order-first md:order-last mx-auto '>
-          <LogoImage />
+        <div className=' text-[#2b3340] w-40 h-40 my-auto  order-first md:order-last mx-auto '>
+          <Image src={Logo2} alt='Logo Image' />
         </div>
       </div>
     </footer>

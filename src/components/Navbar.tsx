@@ -2,7 +2,10 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { LogoSVG, PhoneSVG } from './Icons/icon'
 import Link from 'next/link'
+import Logo from '../../public/logo3.png'
+import Logo2 from '../../public/logo.png'
 import { Squash as Hamburger } from 'hamburger-react'
+import Image from 'next/image'
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
   const dialogRef = useRef<HTMLDialogElement>(null)
@@ -32,20 +35,28 @@ const Navbar = () => {
   return (
     <header
       className={`fixed xl:pt-14 lg:px-28 px-[5vw] py-6 duration-500  w-full z-50 ${
-        scrolled ? 'bg-white xl:pt-8 shadow-md' : 'bg-transparent '
+        scrolled ? 'bg-white   shadow-md' : 'bg-transparent '
       }`}
     >
       <nav
         className={`flex  2xl:justify-center  w-full ${
-          scrolled ? 'text-[#2B3240]' : 'text-white '
+          scrolled ? 'text-[#2B3240] gap-x-20  ' : 'text-white gap-x-10  '
         }`}
       >
         <Link
           href='/'
           style={scrolled ? {} : { filter: 'drop-shadow(0 0 15px #14181e)' }}
-          className={` lg:max-w-[280px] max-w-[223px]  max-h-[70px] mr-20  `}
+          className={` lg:max-w-[280px] max-w-[223px]  max-h-[70px] ${
+            scrolled
+              ? 'xl:-mt-10 -mt-5 -ml-12'
+              : 'xl:-mt-10 -mt-5 mr-10 -ml-12 '
+          } `}
         >
-          <LogoSVG />
+          <Image
+            src={scrolled ? Logo2 : Logo}
+            alt='Logo Image'
+            className=' aspect-[5/2] object-contain '
+          />
         </Link>
         <div className='2xl:flex gap-x-5  flex-grow items-baseline hidden'>
           <a
@@ -60,10 +71,7 @@ const Navbar = () => {
           >
             Meet Your Doctors
           </Link>
-          <a
-            className=' py-2  text-[22px] px-2  font-normal'
-            href='/#Location-Section'
-          >
+          <a className=' py-2  text-[22px] px-2  font-normal' href='/location'>
             Our Locations
           </a>
           <span className=' text-[#fbaf43] py-2 flex items-center jus text-[22px] px-2  font-normal'>
@@ -71,7 +79,7 @@ const Navbar = () => {
               {' '}
               <PhoneSVG />
             </span>
-            Hotline(+92) 318-9737788
+            Hotline(+92) 327-2214444
           </span>
         </div>
         <div
@@ -95,10 +103,18 @@ const Navbar = () => {
         >
           <nav className=' h-full w-full  px-[1vw] pt-10 flex flex-col'>
             <Link
-              href={'/'}
-              className={` lg:max-w-[280px] max-w-[223px]  mx-auto max-h-[70px]  `}
+              href='/'
+              className={` lg:max-w-[280px] max-w-[223px]  max-h-[70px] ${
+                scrolled
+                  ? 'xl:-mt-10 -mt-5 -ml-12'
+                  : 'xl:-mt-10 -mt-5 mr-10 -ml-12 '
+              } `}
             >
-              <LogoSVG />
+              <Image
+                src={Logo2}
+                alt='Logo Image'
+                className=' aspect-[5/2] object-contain '
+              />
             </Link>
             <div className=' text-[#2b3340]  flex flex-col font-semibold mt-10 gap-5 divide-y '>
               <a
@@ -124,7 +140,7 @@ const Navbar = () => {
                   dialogRef.current?.close(), setIsOpen(false)
                 }}
                 className=' py-2  text-[24px] px-2 '
-                href='/#Location-Section'
+                href='/location'
               >
                 Our Locations
               </a>
@@ -135,7 +151,7 @@ const Navbar = () => {
                 </span>
                 Hotline
                 <br />
-                (+92) 318-9737788
+                (+92) 327-2214444
               </span>
             </div>
           </nav>

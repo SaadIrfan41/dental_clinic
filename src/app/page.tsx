@@ -7,6 +7,7 @@ import {
   EmergencyDentistIcon,
   Location_Icon,
   LogoSVG,
+  Mobile_Icon,
   PhoneSVG,
   Phone_Icon,
   TeethCleaningIcon,
@@ -92,16 +93,19 @@ const page = () => {
             ))}
           </div>
           <div className=' col-span-1 xl:ml-[-25%] text-center 2xl:text-start 2xl:ml-[-15%] mx-5 sm:mx-0 mb-20  xl:order-2  my-auto 2xl:my-20'>
-            <h2 className=' lg:text-[50px]  2xl:text-[50px]  text-[25px] sm:text-3xl xl:text-4xl md:text-5xl flex justify-center 2xl:justify-start font-normal mb-7 whitespace-break-spaces'>
-              How can
-              <span className=' font-extrabold '> Embassy Help? </span>
+            <h2
+              style={{ lineHeight: '60px' }}
+              className=' lg:text-[50px] 2xl:text-[50px]  text-[25px] sm:text-3xl xl:text-4xl md:text-5xl  justify-center 2xl:justify-start font-normal mb-7 '
+            >
+              <span className=''>How can</span>
+              <span className=' font-extrabold '> Aesthetic Dental Help? </span>
             </h2>
 
             <p className='lg:text-[22px] xl:text-[22px] xl:text-base text-base font-normal mb-7'>
               From general dentistry and emergency dental care up to braces and
-              other cosmetic offerings, we are Nashville’s comprehensive dental
-              solution. Let our expert dentists and clinicians care for you and
-              your family.
+              other cosmetic offerings, we are Islamabad&apos;s comprehensive
+              dental solution. Let our expert dentists and clinicians care for
+              you and your family.
             </p>
             <strong className=' font-semibold mb-7 xl:text-[22px] lg:text-[22px] text-base'>
               Call today to take advantage of our new patient specials.
@@ -138,19 +142,26 @@ const page = () => {
                 <div className='flex pb-[calc(20px/2)] justify-center md:justify-start'>
                   <Location_Icon />
                   <span className=' text-black pl-[5px]'>
-                    90 St Johns Brooklyn, NY
+                    Shop No 3, Ground Floor, Times Square Building, G-8
+                    Markaz Islamabad
                   </span>
                 </div>
                 <div className='flex pb-[calc(20px/2)] justify-center md:justify-start'>
                   <Phone_Icon />
                   <span className=' text-black pl-[5px] '>
-                    Phone: +012 (999) 8777
+                    Landline: 051-8482888
+                  </span>
+                </div>
+                <div className='flex pb-[calc(20px/2)] justify-center md:justify-start'>
+                  <Mobile_Icon />
+                  <span className=' text-black pl-[5px] '>
+                    Phone: 0327-2214444
                   </span>
                 </div>
                 <div className='flex pb-[calc(20px/2)] justify-center md:justify-start'>
                   <Email_Icon />{' '}
                   <span className=' text-black pl-[5px] mb-10'>
-                    support.trusmile@gmail.com
+                    aestheticdentalco@gmail.com
                   </span>
                 </div>
               </div>
@@ -158,7 +169,9 @@ const page = () => {
             <div className='col-span-1 '>
               <iframe
                 className=' lg:w-full lg:h-full w-full h-96'
-                src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3172.3320023284045!2d-122.01384291048234!3d37.3346479654628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb596e9e188fd%3A0x3b0d8391510688f0!2sApple%20Park!5e0!3m2!1sen!2s!4v1684273707794!5m2!1sen!2s'
+                src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3319.470468742435!2d73.04819507633123!3d33.696773136415516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbfe015b2bf2b%3A0x6662d4df82d9db23!2sAesthetic%20Dental%20Co!5e0!3m2!1sen!2s!4v1685795548061!5m2!1sen!2s'
+                width='600'
+                height='450'
                 style={{ border: 0 }}
                 allowFullScreen={false}
                 loading='lazy'

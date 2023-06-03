@@ -1,33 +1,94 @@
 import React from 'react'
 import {
+  All_on_X_Dental_Implants_Icon,
   BracesIcon,
   ChevronRight,
-  DentalExams_And_Checkups_Icon,
-  DentalImplantsIcon,
+  Clear_Aligners_Icon,
+  Cosmetic_Dentistry_Icon,
+  Dental_Bridges_Icon,
+  Dental_Crowns_Icon,
+  Dental_Sealants_Icon,
   DenturesIcon,
   EmergencyDentistIcon,
-  TeethCleaningIcon,
+  Endodontics_Icon,
+  Fillings_Icon,
+  Orthodontist_Icon,
+  Periodontics_Icon,
+  Root_Canal_Therapy_Icon,
+  Teeth_Cleaning_Icon,
+  Teeth_Whitening_Icon,
+  Tooth_Extraction_Icon,
+  Veneers_Icon,
 } from '@/components/Icons/icon'
 import Link from 'next/link'
 
 const services = [
-  {
-    name: 'Emergency Dentist',
-    icon: <EmergencyDentistIcon />,
-    details:
-      'You never know when a dental emergency will happen. Thankfully, Embassy Dental is Nashville’s most trusted Dental Emergency team. We have a team of dental experts to serve you.',
-  },
   {
     name: 'Braces',
     icon: <BracesIcon />,
     details:
       'Traditional braces are constructed to correct the alignment of your teeth using a framework of metal straightening wires and brackets.',
   },
+
   {
-    name: 'Teeth Cleaning',
-    icon: <TeethCleaningIcon />,
+    name: 'Cosmetic Dentistry',
+    icon: <Cosmetic_Dentistry_Icon />,
     details:
-      'At Embassy Dental, we believe that getting your teeth cleaned every 6 months keep your teeth and gums as healthy as possible.',
+      'There are two parts to your Aesthetic Dental visit – examination and cleaning. Your exam will check for cavities, plaque, and tartar on your teeth.',
+  },
+  {
+    name: 'Endodontics',
+    icon: <Endodontics_Icon />,
+    details:
+      'A root canal procedure with an expert endodontist is needed to save a tooth damaged by severe decay or trauma. ',
+  },
+  {
+    name: 'Orthodontist',
+    icon: <Orthodontist_Icon />,
+    details:
+      'Our orthodontists handle the diagnosis, positioning of the jaw, and correction of misaligned teeth with devices such as braces and clear aligners. ',
+  },
+  {
+    name: 'Clear Aligners',
+    icon: <Clear_Aligners_Icon />,
+    details:
+      'Clear aligners are made from transparent materials that adjust your teeth without the “hardware” traditionally associated with braces.',
+  },
+  {
+    name: 'Dental Bridges',
+    icon: <Dental_Bridges_Icon />,
+    details:
+      'A bridge is placed to correct teeth that sit on either side of a gap. A dental bridge can restore your smile, while also maintaining your face shape.',
+  },
+  {
+    name: 'Dental Crowns',
+    icon: <Dental_Crowns_Icon />,
+    details:
+      'A crown is a cap, for a damaged tooth. When created and placed correctly, crowns are unnoticeable from your other teeth.',
+  },
+  {
+    name: 'Dental Exams And Check-Ups',
+    icon: <Dental_Sealants_Icon />,
+    details:
+      'There are two parts to your Aesthetic Dental visit – examination and cleaning. Your exam will check for cavities, plaque, and tartar on your teeth.',
+  },
+  {
+    name: 'All on X Dental Implants',
+    icon: <All_on_X_Dental_Implants_Icon />,
+    details:
+      ' With All on X implants / dentures, patients can enjoy the full functionality and appearance of natural teeth.',
+  },
+  {
+    name: 'Dental Implants',
+    icon: <All_on_X_Dental_Implants_Icon />,
+    details:
+      ' Do you have a missing tooth? We understand how this can make you feel. We believe that everyone should be able to achieve their best smile.',
+  },
+  {
+    name: 'Dental Sealants',
+    icon: <Dental_Sealants_Icon />,
+    details:
+      'Sealants are a thin, protective coating that bonds to the surface of your teeth. When properly applied, sealants can help prevent cavities.',
   },
   {
     name: 'Dentures',
@@ -36,16 +97,52 @@ const services = [
       'Tooth loss is challenging on many levels. Not only can it affect what you eat and how you chew leading to more serious health concerns, but it can also make you feel embarrassed and uncomfortable.',
   },
   {
-    name: 'Dental Implants',
-    icon: <DentalImplantsIcon />,
+    name: 'Emergency Dentist',
+    icon: <EmergencyDentistIcon />,
     details:
-      'Do you have a missing tooth? We understand how this can make you feel. We believe that everyone should be able to achieve their best smile.',
+      'You never know when a dental emergency will happen. Thankfully, Aesthetic Dental is Nashville’s most trusted Dental Emergency team. We have a team of dental experts to serve you.',
   },
   {
-    name: 'Dental Check-Ups',
-    icon: <DentalExams_And_Checkups_Icon />,
+    name: 'Tooth Extraction',
+    icon: <Tooth_Extraction_Icon />,
     details:
-      'There are two parts to your Embassy Dental visit – examination and cleaning. Your exam will check for cavities, plaque, and tartar on your teeth.',
+      'While many of us do our best to keep our teeth healthy, sometimes a tooth needs to be taken out to keep you healthy. In these cases, an extraction is necessary.',
+  },
+  {
+    name: 'Fillings',
+    icon: <Fillings_Icon />,
+    details:
+      'A toothache can disrupt your life. Tooth decay, cracked teeth, and cavities will provide a constant and painful reminder. At Aesthetic Dental we have completed thousands of fillings.',
+  },
+  {
+    name: 'Root Canal Therapy',
+    icon: <Root_Canal_Therapy_Icon />,
+    details:
+      'A Root canal is a treatment used to repair or save a tooth that is decayed or infected. Without proper treatment, the tissue surrounding the tooth may become infected and form painful abscesses.',
+  },
+  {
+    name: 'Teeth Cleaning',
+    icon: <Teeth_Cleaning_Icon />,
+    details:
+      'At Aesthetic Dental, we believe that getting your teeth cleaned every 6 months keep your teeth and gums as healthy as possible.',
+  },
+  {
+    name: 'Teeth Whitening',
+    icon: <Teeth_Whitening_Icon />,
+    details:
+      'Let our team help you determine what whitening process is right for you, based on the current color and condition of your teeth.',
+  },
+  {
+    name: 'Veneers',
+    icon: <Veneers_Icon />,
+    details:
+      'Our veneers are designed to look and fit naturally over your teeth. Remember, veneers are a permanent dental solution.',
+  },
+  {
+    name: 'Periodontics',
+    icon: <Periodontics_Icon />,
+    details:
+      'We specialize in a wide variety of procedures designed to maintain or improve your periodontal tissues. The periodontal (gum) tissues are an important part of your oral health. Our experience and expertise in periodontics allows us to provide high-quality treatments you cannot find anywhere else!',
   },
 ]
 const ServicesPage = () => {
