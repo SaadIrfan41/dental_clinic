@@ -18,7 +18,7 @@ const Footer = () => {
       className=' '
     >
       <div className='  grid md:grid-cols-3 text-[#2b3340] grid-cols-1 max-w-7xl mx-auto items-center py-24 px-20 '>
-        <div className='  '>
+        <div className=' hidden md:block '>
           {' '}
           <h3 className=' font-extrabold text-2xl mt-5 '>Our Location</h3>
           <div className='text-[#17ada4]  mt-5 flex flex-col  items-start'>

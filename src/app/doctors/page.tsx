@@ -76,12 +76,11 @@ const OurDoctors = () => {
                 {/* <h3 className=' font-extrabold 2xl:text-[50px] lg:text-[36px] text-[25px] text-[#2B3340] xl:mb-10 mb-5'></h3> */}
               </div>
               <p className=' font-normal text-[16px] xl:text-[22px] text-[#2B3340]'>
-                Aesthetic Dental is Islamabad&apos;s dentist. With 7 convenient
-                locations and a comprehensive service offering, we deliver the
-                best dental healthcare in Islamabad and its surrounding
-                communities. From the land on the lake down to Mule town, we are
-                close to what matters in your life, fairly priced and ready to
-                exceed your expectations.
+                Aesthetic Dental Co comprises of a team of consultants from
+                different dental specialties who will cater for your dental
+                problem. We deliver the best dental healthcare in Islamabad and
+                it’s surrounding communities. We are close to what matters in
+                your life, fairly priced and ready to exceed your expectations.
               </p>
             </div>
             <div className=' md:mt-auto flex flex-col sm:flex-row md:flex-col  md:items-end gap-5 mt-10 md:mx-auto '>
