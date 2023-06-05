@@ -53,12 +53,12 @@ const page = () => {
                 Better you.
               </span>
             </h1>
-            <a
-              href='#Location-Section'
+            <Link
+              href='/location'
               className='mt-3 py-2 pr-12 w-fit hover:bg-[#fbaf43] lg:text-2xl hover:text-white text-[#fbaf43]  duration-300  pl-6 md:text-xl text-base flex rounded-full    items-center border-2 border-[#fbaf43]'
             >
               <span className='  mr-5'>Find Our Location</span>{' '}
-            </a>
+            </Link>
           </div>
         </div>
       </section>

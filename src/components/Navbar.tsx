@@ -59,10 +59,7 @@ const Navbar = () => {
           />
         </Link>
         <div className='2xl:flex gap-x-5  flex-grow items-baseline hidden'>
-          <a
-            className=' py-2  text-[22px] px-2 font-medium'
-            href='/#Services-Section'
-          >
+          <a className=' py-2  text-[22px] px-2 font-medium' href='/services'>
             Services
           </a>
           <Link
@@ -122,7 +119,7 @@ const Navbar = () => {
                   dialogRef.current?.close(), setIsOpen(false)
                 }}
                 className=' py-2  text-[24px] px-2 '
-                href='/#Services-Section'
+                href='/services'
               >
                 Services
               </a>

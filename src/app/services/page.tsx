@@ -72,6 +72,7 @@ const services = [
     details:
       'There are two parts to your Aesthetic Dental visit – examination and cleaning. Your exam will check for cavities, plaque, and tartar on your teeth.',
   },
+
   {
     name: 'All on X Dental Implants',
     icon: <All_on_X_Dental_Implants_Icon />,
@@ -100,7 +101,7 @@ const services = [
     name: 'Emergency Dentist',
     icon: <EmergencyDentistIcon />,
     details:
-      'You never know when a dental emergency will happen. Thankfully, Aesthetic Dental is Nashville’s most trusted Dental Emergency team. We have a team of dental experts to serve you.',
+      'You never know when a dental emergency will happen. Thankfully, Aesthetic Dental is Islamabad’s most trusted Dental Emergency team. We have a team of dental experts to serve you.',
   },
   {
     name: 'Tooth Extraction',
@@ -144,6 +145,12 @@ const services = [
     details:
       'We specialize in a wide variety of procedures designed to maintain or improve your periodontal tissues. The periodontal (gum) tissues are an important part of your oral health. Our experience and expertise in periodontics allows us to provide high-quality treatments you cannot find anywhere else!',
   },
+  {
+    name: 'Pediatric Dentistry',
+    icon: <Dental_Sealants_Icon />,
+    details:
+      'We provide comprehensive dental care so that children can stay in excellent oral health. With ongoing, regular appointments, we can identify and treat infections early so that your child can avoid feeling any discomfort or having premature tooth loss. As a kid’s dentist, we understand how important it is for your child to remain in good health and do our best to make that a reality. We specialize in providing complete oral rehabilitation under General Anesthesia.',
+  },
 ]
 const ServicesPage = () => {
   return (
@@ -175,9 +182,9 @@ const ServicesPage = () => {
               Services
             </h3>
             <p className=' font-normal text-[16px] xl:text-[22px] text-[#2B3340]'>
-              Offering general, cosmetic and orthodontic dentistry, Embassy
+              Offering general, cosmetic and orthodontic dentistry, Aesthetic
               Dental offers our patients exceptional dental care that is both
-              convenient and affordable. We are Nashville’s comprehensive dental
+              convenient and affordable. We are Islamabad’s comprehensive dental
               solution.
             </p>
           </div>

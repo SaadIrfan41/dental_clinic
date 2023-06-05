@@ -1,37 +1,42 @@
 import Link from 'next/link'
 import React from 'react'
 import { ChevronRight } from '@/components/Icons/icon'
-import DocImage01 from '../../../public/doctorImage.jpg'
+import DocImage01 from '../../../public/doctor1.png'
+import DocImage02 from '../../../public/doctor2.jpg'
+import DocImage03 from '../../../public/doctor3.png'
+import DocImage04 from '../../../public/doctor4.png'
+import DocImage05 from '../../../public/doctor5.jpg'
+
 import Image from 'next/image'
 const doctors = [
   {
-    name: 'Dr. Kirulus Wifky',
+    id: '1',
+    name: 'Prof. Adil Shahnawaz ',
     image: DocImage01,
     details: 'Family Dentist',
   },
   {
-    name: 'Dr. Kirulus Wifky',
-    image: DocImage01,
+    id: '2',
+    name: 'Prof. Amber Farooq ',
+    image: DocImage02,
     details: 'Family Dentist',
   },
   {
-    name: 'Dr. Kirulus Wifky',
-    image: DocImage01,
+    id: '3',
+    name: 'Dr Muhammad Jamal ',
+    image: DocImage03,
     details: 'Family Dentist',
   },
   {
-    name: 'Dr. Kirulus Wifky',
-    image: DocImage01,
+    id: '4',
+    name: 'Dr. Nageen ',
+    image: DocImage04,
     details: 'Family Dentist',
   },
   {
-    name: 'Dr. Kirulus Wifky',
-    image: DocImage01,
-    details: 'Family Dentist',
-  },
-  {
-    name: 'Dr. Kirulus Wifky',
-    image: DocImage01,
+    id: '5',
+    name: 'Dr. Zuhair Mehdi ',
+    image: DocImage05,
     details: 'Family Dentist',
   },
 ]
@@ -71,9 +76,9 @@ const OurDoctors = () => {
                 {/* <h3 className=' font-extrabold 2xl:text-[50px] lg:text-[36px] text-[25px] text-[#2B3340] xl:mb-10 mb-5'></h3> */}
               </div>
               <p className=' font-normal text-[16px] xl:text-[22px] text-[#2B3340]'>
-                Embassy Dental is Nashville’s dentist. With 7 convenient
+                Aesthetic Dental is Islamabad&apos;s dentist. With 7 convenient
                 locations and a comprehensive service offering, we deliver the
-                best dental healthcare in Nashville and its surrounding
+                best dental healthcare in Islamabad and its surrounding
                 communities. From the land on the lake down to Mule town, we are
                 close to what matters in your life, fairly priced and ready to
                 exceed your expectations.
@@ -81,7 +86,7 @@ const OurDoctors = () => {
             </div>
             <div className=' md:mt-auto flex flex-col sm:flex-row md:flex-col  md:items-end gap-5 mt-10 md:mx-auto '>
               <Link
-                href='/#Location-Section'
+                href='/location'
                 className=' xl:py-[12px] xl:px-[24px] py-[9px] px-[18px] w-fit bg-[#fbaf43] lg:text-xl hover:text-white text-[#2b3340] text-center  duration-300 md:text-xl text-base flex rounded-full    items-center border-2 border-[#fbaf43] '
               >
                 <span className=''>Find Our Location</span>
@@ -95,8 +100,9 @@ const OurDoctors = () => {
             </div>
           </div>
           <div className='grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1  mt-20  gap-5   rounded-2xl  '>
-            {doctors.map(({ name, details, image }, index) => (
-              <div
+            {doctors.map(({ id, name, details, image }, index) => (
+              <Link
+                href={`/doctors/${id}`}
                 style={{
                   boxShadow: '0 0 15px #c6cfdc',
                 }}
@@ -117,12 +123,12 @@ const OurDoctors = () => {
                     <h1 className=' text-[#2b3340] group-hover:text-[#17ada4]  duration-500 text-base xl:text-lg font-bold '>
                       {name}
                     </h1>
-                    <p className='group-hover:animate-wiggle group-hover:block hidden   text-base italic '>
+                    {/* <p className='group-hover:animate-wiggle group-hover:block hidden   text-base italic '>
                       {details}
-                    </p>
+                    </p> */}
                   </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
