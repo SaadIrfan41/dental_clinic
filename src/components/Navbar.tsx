@@ -59,24 +59,30 @@ const Navbar = () => {
           />
         </Link>
         <div className='2xl:flex gap-x-5  flex-grow items-baseline hidden'>
-          <a className=' py-2  text-[22px] px-2 font-medium' href='/services'>
+          <Link
+            className=' py-2  text-[22px] px-2 font-medium'
+            href='/services'
+          >
             Services
-          </a>
+          </Link>
           <Link
             className=' py-2  text-[22px] px-2  font-normal'
             href='/doctors'
           >
             Meet Your Doctors
           </Link>
-          <a className=' py-2  text-[22px] px-2  font-normal' href='/location'>
+          <Link
+            className=' py-2  text-[22px] px-2  font-normal'
+            href='/location'
+          >
             Our Locations
-          </a>
+          </Link>
           <span className=' text-[#fbaf43] py-2 flex items-center jus text-[22px] px-2  font-normal'>
             <span className=' flex items-center justify-center mr-1 rounded-full w-6 h-6 bg-[#fbaf43]'>
               {' '}
               <PhoneSVG />
             </span>
-            Hotline(+92) 327-2214444
+            Contact (+92) 327-2214444
           </span>
         </div>
         <div
@@ -114,7 +120,7 @@ const Navbar = () => {
               />
             </Link>
             <div className=' text-[#2b3340]  flex flex-col font-semibold mt-10 gap-5 divide-y '>
-              <a
+              <Link
                 onClick={() => {
                   dialogRef.current?.close(), setIsOpen(false)
                 }}
@@ -122,7 +128,7 @@ const Navbar = () => {
                 href='/services'
               >
                 Services
-              </a>
+              </Link>
               <Link
                 onClick={() => {
                   dialogRef.current?.close(), setIsOpen(false)
@@ -132,7 +138,7 @@ const Navbar = () => {
               >
                 Meet Your Doctors
               </Link>
-              <a
+              <Link
                 onClick={() => {
                   dialogRef.current?.close(), setIsOpen(false)
                 }}
@@ -140,13 +146,13 @@ const Navbar = () => {
                 href='/location'
               >
                 Our Locations
-              </a>
+              </Link>
               <span className=' text-[#fbaf43] py-2 flex items-center text-[24px] '>
                 <span className=' flex items-center justify-center mr-1 rounded-full w-7 h-7 bg-[#fbaf43]'>
                   {' '}
                   <PhoneSVG />
                 </span>
-                Hotline
+                Contact
                 <br />
                 (+92) 327-2214444
               </span>
