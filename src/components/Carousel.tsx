@@ -7,11 +7,11 @@ import 'swiper/swiper-bundle.min.css'
 // import 'swiper/components/pagination/pagination.scss'
 // import 'swiper/components/effect-flip/effect-flip.scss'
 // import 'swiper/components/scrollbar/scrollbar.scss'
-import LocationImage1 from '../../public/location1.jpg'
-import LocationImage2 from '../../public/location2.jpg'
-import LocationImage3 from '../../public/location3.jpg'
-import LocationImage4 from '../../public/location4.jpg'
-import LocationImage5 from '../../public/location5.jpg'
+// import LocationImage1 from '../../public/location1.jpg'
+// import LocationImage2 from '../../public/location2.jpg'
+// import LocationImage3 from '../../public/location3.jpg'
+// import LocationImage4 from '../../public/location4.jpg'
+// import LocationImage5 from '../../public/location5.jpg'
 import { Autoplay, Pagination, Navigation } from 'swiper'
 import Image from 'next/image'
 const Carousel = () => {
@@ -32,38 +32,38 @@ const Carousel = () => {
       className='mySwiper'
     >
       <SwiperSlide>
-        <Image
-          src={LocationImage1}
+        <img
+          src={'/location1.jpg'}
           alt='Office Image'
-          className='max-h-[670px] object-cover'
+          className='max-h-[670px] object-cover w-full'
         />
       </SwiperSlide>
       <SwiperSlide>
-        <Image
-          src={LocationImage2}
+        <img
+          src={'location2.jpg'}
           alt='Office Image'
-          className='max-h-[670px] object-cover'
+          className='max-h-[670px] object-cover  w-full'
         />
       </SwiperSlide>
       <SwiperSlide>
-        <Image
-          src={LocationImage3}
+        <img
+          src={'/location3.jpg'}
           alt='Office Image'
-          className='max-h-[670px] object-cover'
+          className='max-h-[670px] object-cover  w-full'
         />
       </SwiperSlide>
       <SwiperSlide>
-        <Image
-          src={LocationImage4}
+        <img
+          src={'/location4.jpg'}
           alt='Office Image'
-          className='max-h-[670px] object-cover'
+          className='max-h-[670px] object-cover  w-full'
         />
       </SwiperSlide>
       <SwiperSlide>
-        <Image
-          src={LocationImage5}
+        <img
+          src={'location5.jpg'}
           alt='Office Image'
-          className='max-h-[670px] object-cover'
+          className='max-h-[670px] object-cover  w-full'
         />
       </SwiperSlide>
     </Swiper>

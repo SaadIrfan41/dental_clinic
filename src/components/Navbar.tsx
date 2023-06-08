@@ -52,8 +52,8 @@ const Navbar = () => {
               : 'xl:-mt-10 -mt-5 mr-10 -ml-12 '
           } `}
         >
-          <Image
-            src={scrolled ? Logo2 : Logo}
+          <img
+            src={scrolled ? '/logo.png' : '/logo3.png'}
             alt='Logo Image'
             className=' aspect-[5/2] object-contain '
           />
@@ -113,8 +113,8 @@ const Navbar = () => {
                   : 'xl:-mt-10 -mt-5 mr-10 -ml-12 '
               } `}
             >
-              <Image
-                src={Logo2}
+              <img
+                src={'/logo.png'}
                 alt='Logo Image'
                 className=' aspect-[5/2] object-contain '
               />

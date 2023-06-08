@@ -77,7 +77,7 @@ const Footer = () => {
           </div>
         </div>
         <div className=' text-[#2b3340] w-40 h-40 my-auto  order-first md:order-last mx-auto '>
-          <Image src={Logo2} alt='Logo Image' />
+          <img src={'/logo.png'} alt='Logo Image' />
         </div>
       </div>
     </footer>

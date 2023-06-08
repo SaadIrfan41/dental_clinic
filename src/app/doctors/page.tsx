@@ -1,42 +1,42 @@
 import Link from 'next/link'
 import React from 'react'
 import { ChevronRight } from '@/components/Icons/icon'
-import DocImage01 from '../../../public/doctor1.png'
-import DocImage02 from '../../../public/doctor2.jpg'
-import DocImage03 from '../../../public/doctor3.png'
-import DocImage04 from '../../../public/doctor4.png'
-import DocImage05 from '../../../public/doctor5.jpg'
+// import DocImage01 from '../../../public/doctor1.png'
+// import DocImage02 from '../../../public/doctor2.jpg'
+// import DocImage03 from '../../../public/doctor3.png'
+// import DocImage04 from '../../../public/doctor4.png'
+// import DocImage05 from '../../../public/doctor5.jpg'
 
 import Image from 'next/image'
 const doctors = [
   {
     id: '1',
     name: 'Prof. Adil Shahnawaz ',
-    image: DocImage01,
+    image: '/doctor1.png',
     details: 'Family Dentist',
   },
   {
     id: '2',
     name: 'Prof. Amber Farooq ',
-    image: DocImage02,
+    image: '/doctor2.jpg',
     details: 'Family Dentist',
   },
   {
     id: '3',
     name: 'Dr Muhammad Jamal ',
-    image: DocImage03,
+    image: '/doctor3.png',
     details: 'Family Dentist',
   },
   {
     id: '4',
     name: 'Dr. Nageen ',
-    image: DocImage04,
+    image: '/doctor4.png',
     details: 'Family Dentist',
   },
   {
     id: '5',
     name: 'Dr. Zuhair Mehdi ',
-    image: DocImage05,
+    image: '/doctor5.jpg',
     details: 'Family Dentist',
   },
 ]
@@ -72,8 +72,6 @@ const OurDoctors = () => {
                   Meet the{' '}
                   <span className='font-extrabold'>Aesthetic Dental Team</span>
                 </h1>
-
-                {/* <h3 className=' font-extrabold 2xl:text-[50px] lg:text-[36px] text-[25px] text-[#2B3340] xl:mb-10 mb-5'></h3> */}
               </div>
               <p className=' font-normal text-[16px] xl:text-[22px] text-[#2B3340]'>
                 Aesthetic Dental Co comprises of a team of consultants from
@@ -99,21 +97,21 @@ const OurDoctors = () => {
             </div>
           </div>
           <div className='grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1  mt-20  gap-5   rounded-2xl  '>
-            {doctors.map(({ id, name, details, image }, index) => (
+            {doctors.map(({ id, name, image }, index) => (
               <Link
                 href={`/doctors/${id}`}
                 style={{
                   boxShadow: '0 0 15px #c6cfdc',
                 }}
                 key={index}
-                className=' relative group  overflow-hidden transition-all duration-500  border text-center md:text-start  text-[#2b3340] py-60  rounded-3xl '
+                className=' relative group  overflow-hidden transition-all duration-500  border text-center md:text-start  text-[#2b3340]  rounded-3xl '
               >
-                <Image
-                  priority
-                  fill={true}
+                <img
+                  // priority
+                  // fill={true}
                   placeholder='blur'
                   src={image}
-                  className=' object-cover z-0  rounded-3xl'
+                  className=' object-cover z-0  rounded-3xl h-full'
                   alt='SideImage'
                 />
 
@@ -122,9 +120,6 @@ const OurDoctors = () => {
                     <h1 className=' text-[#2b3340] group-hover:text-[#17ada4]  duration-500 text-base xl:text-lg font-bold '>
                       {name}
                     </h1>
-                    {/* <p className='group-hover:animate-wiggle group-hover:block hidden   text-base italic '>
-                      {details}
-                    </p> */}
                   </div>
                 </div>
               </Link>
