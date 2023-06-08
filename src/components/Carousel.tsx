@@ -40,7 +40,7 @@ const Carousel = () => {
       </SwiperSlide>
       <SwiperSlide>
         <img
-          src={'location2.jpg'}
+          src={'/location2.jpg'}
           alt='Office Image'
           className='max-h-[670px] object-cover  w-full'
         />
@@ -61,7 +61,7 @@ const Carousel = () => {
       </SwiperSlide>
       <SwiperSlide>
         <img
-          src={'location5.jpg'}
+          src={'/location5.jpg'}
           alt='Office Image'
           className='max-h-[670px] object-cover  w-full'
         />
