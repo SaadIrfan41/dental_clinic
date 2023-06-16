@@ -2,8 +2,8 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { LogoSVG, PhoneSVG } from './Icons/icon'
 import Link from 'next/link'
-import Logo from '../../public/logo3.png'
-import Logo2 from '../../public/logo.png'
+import Logo3 from '../../public/logo3.png'
+import Logo from '../../public/logo.png'
 import { Squash as Hamburger } from 'hamburger-react'
 import Image from 'next/image'
 const Navbar = () => {
@@ -52,8 +52,8 @@ const Navbar = () => {
               : 'xl:-mt-10 -mt-5 mr-10 -ml-12 '
           } `}
         >
-          <img
-            src={scrolled ? '/logo.png' : '/logo3.png'}
+          <Image
+            src={scrolled ? Logo : Logo3}
             alt='Logo Image'
             className=' aspect-[5/2] object-contain '
           />
@@ -113,8 +113,8 @@ const Navbar = () => {
                   : 'xl:-mt-10 -mt-5 mr-10 -ml-12 '
               } `}
             >
-              <img
-                src={'/logo.png'}
+              <Image
+                src={Logo}
                 alt='Logo Image'
                 className=' aspect-[5/2] object-contain '
               />

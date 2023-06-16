@@ -14,7 +14,7 @@ const doctors = [
   {
     id: '1',
     name: 'Prof. Adil Shahnawaz ',
-    image: '/doctor1.png',
+    image: DocImage01,
     details: `Prof. Adil Shahnawaz did his graduation from de’Montmorency College of Dentistry, Lahore in 2003. He cleared his Fellowship of College of Physicians & Surgeon Pakistan (FCPS) examination in 2011. After serving as Registrar and Assistant Professor in Islamabad Medical & Dental College (IM&DC) for five years he joined Abbottabad International Medical & Dental College in 2016 and still serving the institute as Head Department of Operative Dentistry and Vice Principal (Administration).
 He has various research publications in International & National Journals. His expertise includes dental procedures including Root Canal Treatment, Fillings, Veneers, Crown & Bridge (Fixed Prosthesis) and Paediatric Dental Procedures. He also specializes in performing complete Paediatric Oral Rehabilitation under General Anaesthesia.
  Prof. Adil is associated with many Continuing Dental Education (CDE) programs that are run all over the country and has a vast experience of conducting hands on workshops related to endodontics and operative dentistry. He is course lead and facilitator at Academy of Continuing Health Education & Research (ACHER) where he is running a six-month long certification course in endodontics and restorative dentistry
@@ -23,7 +23,7 @@ He has various research publications in International & National Journals. His e
   {
     id: '2',
     name: 'Prof. Amber Farooq ',
-    image: '/doctor2.jpg',
+    image: DocImage02,
     details: `Prof. Amber Farooq did her graduation from de’Montmorency College of Dentistry, Lahore. She completed her Fellowship in Orthodontics from College of Physicians and Surgeons in 2014. She is a Professor and Heads the Department of Orthodontics at Abbottabad International Medical and Dental College. She also holds the additional post of Vice principal (Clinical Sciences) of the College. Previously, she had worked with Agha Khan Health services for four years and was their head of dentistry as well as their Orthodontist for northern region.
 She did her Certification in Health Professional Education from NUMS institute in 2020. She has a number of publications in renowned journals and has participated in numerous local and international workshops/conferences. She is also the reviewer for a number of journals. 
 She specialises in treating adult patients with clear Aligners and ceramic braces. Her speciality has enabled her to master interceptive, adolescent, adult and surgical orthodontics.  She is trained in treating patients with congenital anomalies like cleft lip and palate and various syndromes. 
@@ -32,13 +32,13 @@ She specialises in treating adult patients with clear Aligners and ceramic brace
   {
     id: '3',
     name: 'Dr Muhammad Jamal ',
-    image: '/doctor3.png',
+    image: DocImage03,
     details: `Dr Muhammad Jamal graduated from Khyber college of Dentistry, Peshawar in 2007. He completed her Fellowship in Orthodontics from College of Physicians and Surgeons in 2014. He worked as Assistant Professor in Oral and Maxillofacial Surgery Department at Islamabad Medical & Dental College from January 2015 to January 2020 and got promoted to the post of Associate Professor. He is currently the head of maxillofacial unit and dental department of CDA hospital. He has fellowship of AOCMF from Germany.  He has also done certification in medical education from Riphah University, Rawalpindi and certification in health professional research from Khyber medical university. He is trained in performing Minor oral procedures like surgical extractions, wisdom teeth extraction and apicectomies. He is also trained to perform dental Implants, handle Maxillofacial trauma, Orthognathic surgery, Maxillofacial pathology and Oral cancer.`,
   },
   {
     id: '4',
     name: 'Dr. Nageen ',
-    image: '/doctor4.png',
+    image: DocImage04,
     details: `Dr. Nageen has been practicing general dentistry for over 4 years now and has been a part of our team for 2 years. She has immense passion for providing quality care especially to paediatric dentistry.
 Performing all paediatric dental procedures chair side in a safe and comfortable environment for the child in need is her priority and is her strength.
 Educating and promoting oral health is another thing she feel strongly about. She was also entrusted with teaching undergraduate dental students of IMDC for over 2 years therefore she's always happy to answer as many and all questions from her patients.
@@ -47,7 +47,7 @@ Educating and promoting oral health is another thing she feel strongly about. Sh
   {
     id: '5',
     name: 'Dr. Zuhair Mehdi ',
-    image: '/doctor5.jpg',
+    image: DocImage05,
     details: `Dr. Zuhair Mehdi completed his BDS degree from prestigious Fatima Jinnah Dental College Karachi in the 2011. He pursued postgraduate training and achieved the Membership in Oral Surgery from CPSP. He also has completed one year postgraduate diploma in the field of Medical Education from Shifa Tameer e Millat University Islamabad. He is serving as an Assistant Professor at FMDC Abbottabad.
 With extensive experience in surgical procedures, Dr. Zuhair Mehdi has developed exceptional skills in performing complex oral surgeries. He specializes in dental implant procedures, helping patients restore their smiles and improve their oral health through the use of advanced implant technology.
 He has done research work, with several publications in reputable dental journals.
@@ -89,11 +89,11 @@ const page = ({ params }: { params: { id: string } }) => {
             <div className=' 2xl:text-[50px] lg:text-[36px] text-[25px] text-[#2B3340]   '>
               <div className='   gap-5   rounded-2xl  '>
                 <div className=' relative  rounded-3xl '>
-                  <img
-                    // priority
+                  <Image
+                    priority
                     // fill={true}
-                    // placeholder='blur'
-                    src={doc?.image}
+                    placeholder='blur'
+                    src={doc?.image as StaticImageData}
                     className='  object-contain z-0  rounded-3xl mx-auto  max-h-[500px]'
                     alt='SideImage'
                   />

@@ -16,9 +16,8 @@ import {
 import React from 'react'
 import heroSideImage from '../../public/heroSideImage.png'
 // import heroImage2 from '../../public/heroImage2.jpg'
-// import Image from 'next/image'
+import Image from 'next/image'
 import Link from 'next/link'
-import WhatsAppButton from '@/components/WhatsApp'
 const services = [
   { name: 'Emergency Dentist', icon: <EmergencyDentistIcon /> },
   { name: 'Braces', icon: <BracesIcon /> },
@@ -36,9 +35,9 @@ const page = () => {
       <section className=' relative bg-[#2b3340] overflow-hidden   '>
         <div className='heroBG' />
         <div className='heroImageSide '>
-          <img
+          <Image
             // placeholder='blur'
-            src={'/heroSideImage.png'}
+            src={heroSideImage}
             className='  h-full pointer-events-none w-fit z-10 xl:block  hidden '
             alt='SideImage'
           />

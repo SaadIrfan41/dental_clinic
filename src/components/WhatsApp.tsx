@@ -12,10 +12,10 @@ const WhatsAppButton = () => {
       className='  fixed md:w-20 md:h-20 w-16 h-16 z-50 bottom-3 right-3 md:bottom-5 md:right-5'
     >
       {/* <span className='animate-ping absolute inline-flex w-12 h-12 bottom-4 right-4 rounded-full bg-green-400 opacity-75' /> */}
-      <img
-        // priority
+      <Image
+        priority
         // placeholder='blur'
-        src={'/whatsApp.svg'}
+        src={WhatsAppImage}
         className='  '
         alt='WhatsApp Buttom'
       />

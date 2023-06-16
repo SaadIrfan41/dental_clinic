@@ -1,42 +1,42 @@
 import Link from 'next/link'
 import React from 'react'
 import { ChevronRight } from '@/components/Icons/icon'
-// import DocImage01 from '../../../public/doctor1.png'
-// import DocImage02 from '../../../public/doctor2.jpg'
-// import DocImage03 from '../../../public/doctor3.png'
-// import DocImage04 from '../../../public/doctor4.png'
-// import DocImage05 from '../../../public/doctor5.jpg'
+import DocImage01 from '../../../public/doctor1.png'
+import DocImage02 from '../../../public/doctor2.jpg'
+import DocImage03 from '../../../public/doctor3.png'
+import DocImage04 from '../../../public/doctor4.png'
+import DocImage05 from '../../../public/doctor5.jpg'
 
 import Image from 'next/image'
 const doctors = [
   {
     id: '1',
     name: 'Prof. Adil Shahnawaz ',
-    image: '/doctor1.png',
+    image: DocImage01,
     details: 'Family Dentist',
   },
   {
     id: '2',
     name: 'Prof. Amber Farooq ',
-    image: '/doctor2.jpg',
+    image: DocImage02,
     details: 'Family Dentist',
   },
   {
     id: '3',
     name: 'Dr Muhammad Jamal ',
-    image: '/doctor3.png',
+    image: DocImage03,
     details: 'Family Dentist',
   },
   {
     id: '4',
     name: 'Dr. Nageen ',
-    image: '/doctor4.png',
+    image: DocImage04,
     details: 'Family Dentist',
   },
   {
     id: '5',
     name: 'Dr. Zuhair Mehdi ',
-    image: '/doctor5.jpg',
+    image: DocImage05,
     details: 'Family Dentist',
   },
 ]
@@ -106,8 +106,8 @@ const OurDoctors = () => {
                 key={index}
                 className=' relative group  overflow-hidden transition-all duration-500  border text-center md:text-start  text-[#2b3340]  rounded-3xl '
               >
-                <img
-                  // priority
+                <Image
+                  priority
                   // fill={true}
                   placeholder='blur'
                   src={image}

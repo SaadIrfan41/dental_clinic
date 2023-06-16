@@ -2,14 +2,12 @@ import React from 'react'
 import {
   Email_Icon,
   Location_Icon,
-  LogoImage,
-  LogoSVG,
   Mobile_Icon,
   Phone_Icon,
 } from './Icons/icon'
 import Link from 'next/link'
 import Image from 'next/image'
-import Logo2 from '../../public/logo.png'
+import Logo from '../../public/logo.png'
 
 const Footer = () => {
   return (
@@ -77,7 +75,7 @@ const Footer = () => {
           </div>
         </div>
         <div className=' text-[#2b3340] w-40 h-40 my-auto  order-first md:order-last mx-auto '>
-          <img src={'/logo.png'} alt='Logo Image' />
+          <Image src={Logo} alt='Logo Image' />
         </div>
       </div>
     </footer>
