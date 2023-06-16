@@ -82,7 +82,7 @@ const Navbar = () => {
               {' '}
               <PhoneSVG />
             </span>
-            Contact (+92) 327-2214444
+            <a href='tel:+923272214444'> Contact (+92) 327-22144443</a>
           </span>
         </div>
         <div

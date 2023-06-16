@@ -68,7 +68,7 @@ const Footer = () => {
             <div className='flex pb-[calc(20px/2)] justify-center '>
               <a
                 target='_blank'
-                href='https://www.google.com/maps/dir//Apple+Park+One+Apple+Park+Way+Cupertino,+CA+95014+United+States/@37.3346438,-122.008972,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x808fb596e9e188fd:0x3b0d8391510688f0!2m2!1d-122.008972!2d37.3346438'
+                href='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3319.470468742435!2d73.04819507633123!3d33.696773136415516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbfe015b2bf2b%3A0x6662d4df82d9db23!2sAesthetic%20Dental%20Co!5e0!3m2!1sen!2s!4v1685795548061!5m2!1sen!2s'
                 className=' text-[#2b3340] pl-[5px] mb-10'
               >
                 Geo Location
