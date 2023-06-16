@@ -148,13 +148,11 @@ const Navbar = () => {
                 Our Locations
               </Link>
               <span className=' text-[#fbaf43] py-2 flex items-center text-[24px] '>
-                <span className=' flex items-center justify-center mr-1 rounded-full w-7 h-7 bg-[#fbaf43]'>
+                <span className=' flex items-center justify-center mr-1 rounded-full w-7 h-7 px-1 bg-[#fbaf43]'>
                   {' '}
                   <PhoneSVG />
                 </span>
-                Contact
-                <br />
-                (+92) 327-2214444
+                <a href='tel:+923272214444'> Contact (+92) 327-22144443</a>
               </span>
             </div>
           </nav>
