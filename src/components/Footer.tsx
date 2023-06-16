@@ -68,7 +68,7 @@ const Footer = () => {
             <div className='flex pb-[calc(20px/2)] justify-center '>
               <a
                 target='_blank'
-                href='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3319.470468742435!2d73.04819507633123!3d33.696773136415516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbfe015b2bf2b%3A0x6662d4df82d9db23!2sAesthetic%20Dental%20Co!5e0!3m2!1sen!2s!4v1685795548061!5m2!1sen!2s'
+                href='https://www.google.com/maps/place/Aesthetic+Dental+Co/@33.696769,73.05077,16z/data=!4m6!3m5!1s0x38dfbfe015b2bf2b:0x6662d4df82d9db23!8m2!3d33.6967687!4d73.05077!16s%2Fg%2F11ssvd1nng?hl=en&entry=ttu'
                 className=' text-[#2b3340] pl-[5px] mb-10'
               >
                 Geo Location
